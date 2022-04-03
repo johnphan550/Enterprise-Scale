@@ -30,11 +30,11 @@
         }        
     },
     "variables": {
-        "workspaceName": "la-hub-mgmt-prd-eus2",
+        "workspaceName": "[concat(parameters('topLevelManagementGroupPrefix'), '-la-', parameters('managementSubscriptionId'))]",
         "workspaceRegion": "[deployment().location]",
-        "automationAccountName": "acc-hub-mgmt-prd-eus2",
+        "automationAccountName": "[concat(parameters('topLevelManagementGroupPrefix'), '-a-', parameters('managementSubscriptionId'))]",
         "automationRegion": "[deployment().location]",
-        "rgName": "rg-hub-mgmt-prd-eus2",
+        "rgName": "[concat(parameters('topLevelManagementGroupPrefix'), '-mgmt')]",
         "resourceDeploymentName": "[take(concat('EntScale-mgmt', deployment().name), 64)]"
     },
     "resources": [
