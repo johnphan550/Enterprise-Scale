@@ -434,7 +434,7 @@
                         "value": []
                     },
                     "landingZoneMgs": {
-                        "value": [ "online", "corp" ]
+                        "value": [ "Online", "Corporate" ]
                     }
                 }
             }
