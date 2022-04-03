@@ -33,7 +33,7 @@
     "variables": {
         "enterpriseScaleManagementGroups": {
             "platform": "Hub",
-            "landingZone": "Landing Zones",
+            "landingZone": "LandingZones",
             "decommissioned": "Decommissioned",
             "sandboxes": "Sandboxes"
         },
