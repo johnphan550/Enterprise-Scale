@@ -513,7 +513,7 @@
                         "name": "esVpnGw",
                         "type": "Microsoft.Common.OptionsGroup",
                         "label": "Deploy VPN Gateway",
-                        "defaultValue": "Yes",
+                        "defaultValue": "No",
                         "visible": "[equals(steps('esConnectivityGoalState').esHub, 'Yes')]",
                         "toolTip": "If 'Yes' is selected when also adding a subscription for connectivity, ARM will deploy VPN gateway",
                         "constraints": {
@@ -826,7 +826,7 @@
                         "name": "esAzFw",
                         "type": "Microsoft.Common.OptionsGroup",
                         "label": "Deploy Azure Firewall",
-                        "defaultValue": "No",
+                        "defaultValue": "Yes",
                         "visible": "[equals(steps('esConnectivityGoalState').esHub, 'Yes')]",
                         "toolTip": "If 'Yes' is selected when also adding a subscription for connectivity, ARM will deploy Azure Firewall",
                         "constraints": {
