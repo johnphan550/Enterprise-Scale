@@ -683,7 +683,7 @@
                         "label": "Subnet for VPN/Express route",
                         "toolTip": "Provide address prefix in CIDR notation (e.g 10.100.1.0/24)",
                         "defaultValue": "10.5.1.64/27",
-                        "visible": true,
+                        "visible": "[or(equals(steps('esConnectivityGoalState').esErGw, 'Yes'), equals(steps('esConnectivityGoalState').esVpnGw, 'Yes'))]",
                         "constraints": {
                             "required": true,
                             "validationMessage": "The subnet network's address space, specified as one address prefixes in CIDR notation (e.g. 192.168.1.0/24)"
@@ -896,7 +896,7 @@
                         "label": "Subnet for Azure Firewall",
                         "toolTip": "Provide address prefix in CIDR notation (e.g 10.100.0.0/24)",
                         "defaultValue": "10.5.1.0/26",
-                        "visible": true,
+                        "visible": "[equals(steps('esConnectivityGoalState').esAzFw, 'Yes')]",
                         "constraints": {
                             "required": true,
                             "validationMessage": "The subnet network's address space, specified as one address prefixes in CIDR notation (e.g. 192.168.1.0/24)"

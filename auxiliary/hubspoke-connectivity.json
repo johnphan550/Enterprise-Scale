@@ -93,11 +93,11 @@
         },
         "subnetMaskForAzFw": {
             "type": "string",
-            "defaultValue": ""
+            "defaultValue": "10.5.1.0/26"
         },
         "subnetMaskForGw": {
             "type": "string",
-            "defaultValue": ""
+            "defaultValue": "10.5.1.64/27"
         },
         "firewallZones": {
             "type": "array",
