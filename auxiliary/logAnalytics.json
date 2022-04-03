@@ -30,11 +30,11 @@
         }        
     },
     "variables": {
-        "workspaceName": "la-hub-mgmt-prd-eus2-', parameters('managementSubscriptionId'))]",
+        "workspaceName": "la-hub-mgmt-prd-eus2",
         "workspaceRegion": "[deployment().location]",
-        "automationAccountName": "acc-hub-mgmt-prd-eus2-', parameters('managementSubscriptionId'))]",
+        "automationAccountName": "acc-hub-mgmt-prd-eus2",
         "automationRegion": "[deployment().location]",
-        "rgName": "rg-hub-mgmt-prd-eus2')]",
+        "rgName": "rg-hub-mgmt-prd-eus2",
         "resourceDeploymentName": "[take(concat('EntScale-mgmt', deployment().name), 64)]"
     },
     "resources": [

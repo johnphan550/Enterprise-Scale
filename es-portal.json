@@ -106,7 +106,7 @@
                         "max": 730,
                         "label": "Log Analytics Data Retention (days)",
                         "subLabel": "Days",
-                        "defaultValue": 30,
+                        "defaultValue": 90,
                         "showStepMarkers": false,
                         "toolTip": "Select retention days for Azure logs. Default is 30 days.",
                         "constraints": {
@@ -363,7 +363,7 @@
                         "name": "esSecuritySolution",
                         "type": "Microsoft.Common.OptionsGroup",
                         "label": "Deploy Azure Sentinel",
-                        "defaultValue": "No",
+                        "defaultValue": "Yes",
                         "toolTip": "If 'Yes' is selected when also adding a subscription for management, ARM will deploy resources and enable them for continous compliance",
                         "constraints": {
                             "allowedValues": [
