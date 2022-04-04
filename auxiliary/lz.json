@@ -27,7 +27,7 @@
         },
         "targetManagementGroup": {
             "type": "string",
-            "defaultValue": "landingzones",
+            "defaultValue": "Landingzones",
             "metadata": {
                 "description": "Name of the Landing Zones' Management Group (landingzones, corp, online) where the Policies will be applied to."
             }
@@ -202,7 +202,7 @@
         }          
     },
     "variables": {
-        "scope": "[concat('/providers/Microsoft.Management/managementGroups/', parameters('topLevelManagementGroupPrefix'), '-', parameters('targetManagementGroup'))]",
+        "scope": "[concat('/providers/Microsoft.Management/managementGroups/', parameters('targetManagementGroup'))]",
         "policyDefinitions": {
             "deployEncryptionInTransit": "[concat('/providers/Microsoft.Management/managementGroups/', parameters('topLevelManagementGroupPrefix'), '/providers/Microsoft.Authorization/policySetDefinitions/Enforce-EncryptTransit')]",
             "denyPublicEndpoint": "[concat('/providers/Microsoft.Management/managementGroups/', parameters('topLevelManagementGroupPrefix'), '/providers/Microsoft.Authorization/policySetDefinitions/Deny-PublicEndpoints')]",

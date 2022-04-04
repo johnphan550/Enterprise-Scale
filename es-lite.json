@@ -639,7 +639,7 @@
                         "value": "[parameters('enableLogAnalytics')]"
                     },
                     "targetManagementGroup": {
-                        "value": "landingzones"
+                        "value": "Landingzones"
                     },
                     "denyHttpIngressForAks": {
                         "value": "[parameters('denyHttpIngressForAks')]"
