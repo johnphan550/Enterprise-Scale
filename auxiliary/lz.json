@@ -265,7 +265,7 @@
             "deployDdOsConnectivityMg": "[guid(concat(parameters('topLevelManagementGroupPrefix'), '-connectivity'))]"
         },
         "dDoSRgName": "[concat(parameters('topLevelManagementGroupPrefix'), '-ddos')]",
-        "dDoSName": "[concat(parameters('topLevelManagementGroupPrefix'), '-ddos-', deployment().location])]"
+        "dDoSName": "[concat(parameters('topLevelManagementGroupPrefix'), '-ddos-', deployment().location)]"
         //"blankTemplateEscaped": "{\"$schema\":\"https://schema.management.azure.com/schemas/2019-08-01/tenantDeploymentTemplate.json#\",\"contentVersion\":\"1.0.0.0\",\"parameters\":{},\"variables\":{},\"resources\":[],\"outputs\":{}}"
     },
     "resources": [
@@ -624,7 +624,7 @@
                 "scope": "[variables('scope')]",
                 "parameters": {
                     "logAnalytics_1": {
-                        "value": "[toLower(concat('/subscriptions/', parameters('managementSubscriptionId'), '/resourceGroups/', 'rg-hub-mgmt-prd-', deployment().location], '/providers/Microsoft.OperationalInsights/workspaces/', 'la-hub-mgmt-prd-', deployment().location], '-', parameters('managementSubscriptionId')))]"
+                        "value": "[toLower(concat('/subscriptions/', parameters('managementSubscriptionId'), '/resourceGroups/', 'rg-hub-mgmt-prd-', deployment().location, '/providers/Microsoft.OperationalInsights/workspaces/', 'la-hub-mgmt-prd-', deployment().location, '-', parameters('managementSubscriptionId')))]"
                     }
                 }
             }
@@ -661,7 +661,7 @@
                 "scope": "[variables('scope')]",
                 "parameters": {
                     "logAnalytics_1": {
-                        "value": "[toLower(concat('/subscriptions/', parameters('managementSubscriptionId'), '/resourceGroups/', 'rg-hub-mgmt-prd-', deployment().location], '/providers/Microsoft.OperationalInsights/workspaces/', 'la-hub-mgmt-prd-', deployment().location], '-', parameters('managementSubscriptionId')))]"
+                        "value": "[toLower(concat('/subscriptions/', parameters('managementSubscriptionId'), '/resourceGroups/', 'rg-hub-mgmt-prd-', deployment().location, '/providers/Microsoft.OperationalInsights/workspaces/', 'la-hub-mgmt-prd-', deployment().location, '-', parameters('managementSubscriptionId')))]"
                     }
                 }
             }
@@ -698,7 +698,7 @@
                 "scope": "[variables('scope')]",
                 "parameters": {
                     "logAnalytics": {
-                        "value": "[toLower(concat('/subscriptions/', parameters('managementSubscriptionId'), '/resourceGroups/', 'rg-hub-mgmt-prd-', deployment().location], '/providers/Microsoft.OperationalInsights/workspaces/', 'la-hub-mgmt-prd-', deployment().location], '-', parameters('managementSubscriptionId')))]"
+                        "value": "[toLower(concat('/subscriptions/', parameters('managementSubscriptionId'), '/resourceGroups/', 'rg-hub-mgmt-prd-', deployment().location, '/providers/Microsoft.OperationalInsights/workspaces/', 'la-hub-mgmt-prd-', deployment().location, '-', parameters('managementSubscriptionId')))]"
                     }
                 }
             }
@@ -735,7 +735,7 @@
                 "scope": "[variables('scope')]",
                 "parameters": {
                     "logAnalytics": {
-                        "value": "[toLower(concat('/subscriptions/', parameters('managementSubscriptionId'), '/resourceGroups/', 'rg-hub-mgmt-prd-', deployment().location], '/providers/Microsoft.OperationalInsights/workspaces/', 'la-hub-mgmt-prd-', deployment().location], '-', parameters('managementSubscriptionId')))]"
+                        "value": "[toLower(concat('/subscriptions/', parameters('managementSubscriptionId'), '/resourceGroups/', 'rg-hub-mgmt-prd-', deployment().location, '/providers/Microsoft.OperationalInsights/workspaces/', 'la-hub-mgmt-prd-', deployment().location, '-', parameters('managementSubscriptionId')))]"
                     }
                 }
             }

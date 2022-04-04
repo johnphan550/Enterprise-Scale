@@ -195,7 +195,7 @@
                 "scope": "[concat('/providers/Microsoft.Management/managementGroups/', parameters('topLevelManagementGroupPrefix'))]",
                 "parameters": {
                     "logAnalytics": {
-                        "value": "[toLower(concat('/subscriptions/', parameters('managementSubscriptionId'), '/resourceGroups/', 'rg-hub-mgmt-prd-', deployment().location], '/providers/Microsoft.OperationalInsights/workspaces/', 'la-hub-mgmt-prd-', deployment().location], '-', parameters('managementSubscriptionId')))]"
+                        "value": "[toLower(concat('/subscriptions/', parameters('managementSubscriptionId'), '/resourceGroups/', 'rg-hub-mgmt-prd-', deployment().location, '/providers/Microsoft.OperationalInsights/workspaces/', 'la-hub-mgmt-prd-', deployment().location, '-', parameters('managementSubscriptionId')))]"
                     },
                     "logsEnabled": {
                         "value": "True"
@@ -235,7 +235,7 @@
                 "scope": "[concat('/providers/Microsoft.Management/managementGroups/', parameters('topLevelManagementGroupPrefix'))]",
                 "parameters": {
                     "logAnalytics": {
-                        "value": "[toLower(concat('/subscriptions/', parameters('managementSubscriptionId'), '/resourceGroups/', 'rg-hub-mgmt-prd-', deployment().location], '/providers/Microsoft.OperationalInsights/workspaces/', 'la-hub-mgmt-prd-', deployment().location], '-', parameters('managementSubscriptionId')))]"
+                        "value": "[toLower(concat('/subscriptions/', parameters('managementSubscriptionId'), '/resourceGroups/', 'rg-hub-mgmt-prd-', deployment().location, '/providers/Microsoft.OperationalInsights/workspaces/', 'la-hub-mgmt-prd-', deployment().location, '-', parameters('managementSubscriptionId')))]"
                     }
                 }
             }
@@ -275,7 +275,7 @@
                         "value": "[parameters('emailContactAsc')]"
                     },
                     "logAnalytics": {
-                        "value": "[toLower(concat('/subscriptions/', parameters('managementSubscriptionId'), '/resourceGroups/', 'rg-hub-mgmt-prd-', deployment().location], '/providers/Microsoft.OperationalInsights/workspaces/', 'la-hub-mgmt-prd-', deployment().location], '-', parameters('managementSubscriptionId')))]"
+                        "value": "[toLower(concat('/subscriptions/', parameters('managementSubscriptionId'), '/resourceGroups/', 'rg-hub-mgmt-prd-', deployment().location, '/providers/Microsoft.OperationalInsights/workspaces/', 'la-hub-mgmt-prd-', deployment().location, '-', parameters('managementSubscriptionId')))]"
                     },
                     "ascExportResourceGroupName": {
                         "value": "[concat(parameters('topLevelManagementGroupPrefix'), '-asc-export')]"
@@ -476,7 +476,7 @@
                         "value": "[parameters('topLevelManagementGroupPrefix')]"
                     },
                     "workspaceResourceId":{
-                        "value": "[toLower(concat('/subscriptions/', parameters('managementSubscriptionId'), '/resourceGroups/', 'rg-hub-mgmt-prd-', deployment().location], '/providers/Microsoft.OperationalInsights/workspaces/', 'la-hub-mgmt-prd-', deployment().location], '-', parameters('managementSubscriptionId')))]"
+                        "value": "[toLower(concat('/subscriptions/', parameters('managementSubscriptionId'), '/resourceGroups/', 'rg-hub-mgmt-prd-', deployment().location, '/providers/Microsoft.OperationalInsights/workspaces/', 'la-hub-mgmt-prd-', deployment().location, '-', parameters('managementSubscriptionId')))]"
                     }
                 }
             }
@@ -618,7 +618,7 @@
                         "value": "[parameters('topLevelManagementGroupPrefix')]"
                     },
                     "workspaceResourceId":{
-                        "value": "[toLower(concat('/subscriptions/', parameters('managementSubscriptionId'), '/resourceGroups/', 'rg-hub-mgmt-prd-', deployment().location], '/providers/Microsoft.OperationalInsights/workspaces/', 'la-hub-mgmt-prd-', deployment().location], '-', parameters('managementSubscriptionId')))]"
+                        "value": "[toLower(concat('/subscriptions/', parameters('managementSubscriptionId'), '/resourceGroups/', 'rg-hub-mgmt-prd-', deployment().location, '/providers/Microsoft.OperationalInsights/workspaces/', 'la-hub-mgmt-prd-', deployment().location, '-', parameters('managementSubscriptionId')))]"
                     }
                 }
             }
@@ -684,7 +684,7 @@
                         "value": "[parameters('topLevelManagementGroupPrefix')]"
                     },
                     "workspaceResourceId":{
-                        "value": "[toLower(concat('/subscriptions/', parameters('managementSubscriptionId'), '/resourceGroups/', 'rg-hub-mgmt-prd-', deployment().location], '/providers/Microsoft.OperationalInsights/workspaces/', 'la-hub-mgmt-prd-', deployment().location], '-', parameters('managementSubscriptionId')))]"
+                        "value": "[toLower(concat('/subscriptions/', parameters('managementSubscriptionId'), '/resourceGroups/', 'rg-hub-mgmt-prd-', deployment().location, '/providers/Microsoft.OperationalInsights/workspaces/', 'la-hub-mgmt-prd-', deployment().location, '-', parameters('managementSubscriptionId')))]"
                     }
                 }
             }
