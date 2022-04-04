@@ -399,7 +399,7 @@
             "diagnosticsAndSecurity": "[uri(deployment().properties.templateLink.uri, 'auxiliary/diagnosticsAndSecurity.json')]",
             "landingZone": "[uri(deployment().properties.templateLink.uri, 'auxiliary/lz.json')]"
         },
-        "moveSubscription": "[concat(parameters('Hub/', parameters('platformSubscriptionId'))]",
+        "moveSubscription": "[concat('Hub/', parameters('platformSubscriptionId'))]",
         "noSubscription": "Hub/na",
         "noOnlineLzSubscription": "Isolated/nalz",
         "noCorpLzSubscription": "Peered/nalz",
