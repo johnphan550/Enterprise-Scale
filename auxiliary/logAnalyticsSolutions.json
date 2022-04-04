@@ -139,7 +139,7 @@
             "type": "Microsoft.Resources/deployments",
             "apiVersion": "2018-05-01",
             "name": "[take(concat('EntScale-', 'solutions-', guid(deployment().name)), 63)]",
-            "resourceGroup": "[concat('rg-hub-mgmt-prd-', parameters('workspaceRegion')]",
+            "resourceGroup": "[concat('rg-hub-mgmt-prd-', parameters('workspaceRegion'))]",
             "properties": {
                 "mode": "Incremental",
                 "template": {
