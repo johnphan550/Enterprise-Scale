@@ -142,7 +142,7 @@
             "condition": "[not(empty(parameters('landingZoneMgs')))]",
             "type": "Microsoft.Management/managementGroups",
             "apiVersion": "2020-05-01",
-            "name": "parameters('landingZoneMgs')[copyIndex()]",
+            "name": "[parameters('landingZoneMgs')[copyIndex()]]",
             "dependsOn": [
                 "[tenantResourceId('Microsoft.Management/managementGroups/', variables('enterpriseScaleManagementGroups').landingZone)]"
             ],
