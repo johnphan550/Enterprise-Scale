@@ -10,7 +10,7 @@
         },
         "workspaceName": {
             "type": "string",
-            "defaultValue": "[concat('la-hub-mgmt-prd-', parameters('managementSubscriptionId'))]"
+            "defaultValue": "[concat('la-hub-mgmt-prd-', deployment().location, '-', parameters('managementSubscriptionId'))]"
         },
         "workspaceRegion": {
             "type": "string",
