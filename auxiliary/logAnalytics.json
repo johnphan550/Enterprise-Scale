@@ -32,7 +32,7 @@
     "variables": {
         "workspaceName": "[concat('la-hub-mgmt-prd-', deployment().location, '-', parameters('managementSubscriptionId'))]",
         "workspaceRegion": "[deployment().location]",
-        "automationAccountName": "[concat('acc-hub-mgmt-prd-', deployment().location, '-', parameters('managementSubscriptionId'))]",
+        "automationAccountName": "[concat('acc-mgmt-', parameters('managementSubscriptionId'))]",
         "automationRegion": "[deployment().location]",
         "rgName": "[concat('rg-hub-mgmt-prd-', deployment().location)]",
         "resourceDeploymentName": "[take(concat('EntScale-mgmt', deployment().name), 64)]"
