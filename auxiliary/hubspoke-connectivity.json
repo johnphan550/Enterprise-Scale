@@ -145,7 +145,7 @@
         "dDoSRgName": "rg-ddos-conn-prd",
         "dDoSName": "[concat('ddos-hub-conn-prd-', parameters('location'))]",
         "azFwPolicyName": "[concat('azfwpolicy-hub-conn-prd-', parameters('location'))]",
-        "hubName": "[concat('hub-conn-prd-', parameters('location'))]",
+        "hubName": "[concat('vnet-hub-conn-prd-', parameters('location'))]",
         "azVpnGwIpName": "[concat('pip-', variables('vpngwname'))]",
         "azVpnGwSubnetId": "[concat('/subscriptions/', parameters('connectivitySubscriptionId'), '/resourceGroups/', variables('rgName'),'/providers/Microsoft.Network/virtualNetworks/', variables('hubname'), '/subnets/GatewaySubnet')]",
         "azFwName": "[concat('fw-hub-conn-prd-', parameters('location'))]",
