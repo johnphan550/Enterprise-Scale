@@ -34,7 +34,7 @@
         "workspaceRegion": "[deployment().location]",
         "automationAccountName": "[concat('acc-hub-mgmt-prd-', parameters('location'), '-', parameters('managementSubscriptionId'))]",
         "automationRegion": "[deployment().location]",
-        "rgName": "[concat('rg-hub-mgmt-prd-', parameters('location'))]"
+        "rgName": "[concat('rg-hub-mgmt-prd-', parameters('location'))]",
         "resourceDeploymentName": "[take(concat('EntScale-mgmt', deployment().name), 64)]"
     },
     "resources": [
