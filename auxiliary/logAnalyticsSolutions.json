@@ -90,7 +90,7 @@
         }
     },
     "variables": {
-        "laResourceId": "[toLower(concat('/subscriptions/', parameters('managementSubscriptionId'), '/resourceGroups/rg-hub-mgmt-prd-', parameters('workspaceRegion'), '/providers/Microsoft.OperationalInsights/workspaces/', 'la-hub-mgmt-prd-', parameters('managementSubscriptionId')))]",
+        "laResourceId": "[toLower(concat('/subscriptions/', parameters('managementSubscriptionId'), '/resourceGroups/rg-hub-mgmt-prd-', parameters('workspaceRegion'), '/providers/Microsoft.OperationalInsights/workspaces/', 'la-hub-mgmt-prd-', deployment().location, '-', parameters('managementSubscriptionId')))]",
         "solutions": {
             "security": {
                 "name": "[concat('Security', '(', parameters('workspaceName'), ')')]",
