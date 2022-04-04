@@ -90,7 +90,7 @@
         }
     },
     "variables": {
-        "laResourceId": "[toLower(concat('/subscriptions/', parameters('managementSubscriptionId'), '/resourceGroups/rg-hub-mgmt-prd', '/providers/Microsoft.OperationalInsights/workspaces/', 'la-hub-mgmt-prd-', parameters('managementSubscriptionId')))]",
+        "laResourceId": "[toLower(concat('/subscriptions/', parameters('managementSubscriptionId'), '/resourceGroups/rg-hub-mgmt-prd-', parameters('workspaceRegion'), '/providers/Microsoft.OperationalInsights/workspaces/', 'la-hub-mgmt-prd-', parameters('managementSubscriptionId')))]",
         "solutions": {
             "security": {
                 "name": "[concat('Security', '(', parameters('workspaceName'), ')')]",
@@ -139,7 +139,7 @@
             "type": "Microsoft.Resources/deployments",
             "apiVersion": "2018-05-01",
             "name": "[take(concat('EntScale-', 'solutions-', guid(deployment().name)), 63)]",
-            "resourceGroup": "rg-hub-mgmt-prd",
+            "resourceGroup": "[concat('rg-hub-mgmt-prd-', parameters('workspaceRegion')]",
             "properties": {
                 "mode": "Incremental",
                 "template": {
