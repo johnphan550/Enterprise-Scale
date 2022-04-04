@@ -278,7 +278,7 @@
                         "value": "[toLower(concat('/subscriptions/', parameters('managementSubscriptionId'), '/resourceGroups/', 'rg-hub-mgmt-prd-', deployment().location, '/providers/Microsoft.OperationalInsights/workspaces/', 'la-hub-mgmt-prd-', deployment().location, '-', parameters('managementSubscriptionId')))]"
                     },
                     "ascExportResourceGroupName": {
-                        "value": "[concat(parameters('topLevelManagementGroupPrefix'), '-asc-export')]"
+                        "value": "[concat('rg-hub-ascexport-prd-', deployment().location)]"
                     },
                     "ascExportResourceGroupLocation": {
                         "value": "[deployment().location]"
