@@ -876,6 +876,10 @@
                             "required": true,
                             "allowedValues": [
                                 {
+                                    "label": "None",
+                                    "value": "9"
+                                },
+                                {
                                     "label": "Zone 1",
                                     "value": "1"
                                 },
