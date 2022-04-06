@@ -148,7 +148,7 @@
         "hubName": "[concat('vnet-hub-conn-prd-', parameters('location'))]",
         "azVpnGwIpName": "[concat('pip-', variables('vpngwname'))]",
         "azVpnGwSubnetId": "[concat('/subscriptions/', parameters('connectivitySubscriptionId'), '/resourceGroups/', variables('rgName'),'/providers/Microsoft.Network/virtualNetworks/', variables('hubname'), '/subnets/GatewaySubnet')]",
-        "azFwName": "[concat('fw-hub-conn-prd-', parameters('location'))]",
+        "azFwName": "[concat('afw-hub-conn-prd-', parameters('location'))]",
         "azErGwIpName": "[concat('pip-', variables('erGwName'))]",
         "azVpnGwPipId": "[concat('/subscriptions/', parameters('connectivitySubscriptionId'), '/resourceGroups/', variables('rgName'), '/providers/Microsoft.Network/publicIPAddresses/', variables('azVpnGwIpName'))]",
         "azFwIpName": "[concat('pip-', variables('azFwName'))]",
