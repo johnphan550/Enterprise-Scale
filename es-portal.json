@@ -866,7 +866,7 @@
                         "name": "esFwAz",
                         "type": "Microsoft.Common.DropDown",
                         "label": "Select Availability Zones for the Azure Firewall",
-                        "defaultValue": "None",
+                        "defaultValue": "9",
                         "multiselect": true,
                         "selectAll": true,
                         "filter": true,
