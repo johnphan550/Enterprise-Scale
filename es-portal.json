@@ -877,7 +877,7 @@
                             "allowedValues": [
                                 {
                                     "label": "None",
-                                    "value": null
+                                    "value": "99"
                                 },
 								{
                                     "label": "Zone 1",
