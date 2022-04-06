@@ -487,7 +487,7 @@
                                             "type": "Microsoft.Network/azureFirewalls",
                                             "name": "[variables('azfwname')]",
                                             "location": "[parameters('location')]",
-                                            "zones": "[if(not(empty(parameters('firewallZones'))), parameters('firewallZones'), json('null'))]",
+                                            "zones": "[json('null')]",
                                             "dependsOn": [
                                                 "[concat('Microsoft.Network/firewallPolicies/', variables('azFwPolicyName'))]",
                                                 "[concat('Microsoft.Network/publicIpAddresses/', variables('azFwIpName'))]",
